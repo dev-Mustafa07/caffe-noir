@@ -222,7 +222,7 @@ nav ul li {
     font-family: var(--font-primary);
 }
 
-.coffee-flavours{
+.coffee-flavours {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -231,41 +231,43 @@ nav ul li {
     margin-top: 50px;
 }
 
-.coffee-flavour{
+.coffee-flavour {
     height: 70vh;
     width: 30%;
     transition: 0.3s ease;
     border: 3px solid var(--bg-color);
-    
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.coffee-flavour:hover{
+.coffee-flavour:hover {
     border: 3px solid var(--primary-color);
     /* border-radius: 50px; */
 }
 
-.card01{
+.card01 {
     background-image: url("CofeeMedia/3.png");
 }
-.card02{
+
+.card02 {
     background-image: url("CofeeMedia/2.png");
 }
-.card03{
+
+.card03 {
     background-image: url("CofeeMedia/1.png");
 }
 
-.coffee-flavour:hover .coffee-cnt{
+.coffee-flavour:hover .coffee-cnt {
     visibility: visible;
 }
 
-.coffee-cnt{
+.coffee-cnt {
     visibility: hidden;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.732) ;
+    background-color: rgba(0, 0, 0, 0.732);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -273,7 +275,7 @@ nav ul li {
     justify-content: end;
 }
 
-.ritual{
+.ritual {
     padding: 7vw 10vh;
     background-color: black;
     border-top: 2px solid rgba(255, 255, 255, 0.5);
@@ -284,13 +286,14 @@ nav ul li {
     gap: 50px;
 }
 
-.options{
+.options {
     width: 100%;
     height: 70px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     margin-top: 20px;
 }
-.options ul{
+
+.options ul {
     display: flex;
     height: 100%;
     flex-direction: row;
@@ -298,10 +301,12 @@ nav ul li {
     align-items: center;
     justify-content: center;
 }
-.options ul li{
+
+.options ul li {
     list-style: none;
 }
-.current{
+
+.current {
     color: var(--primary-color);
     font-weight: 500;
     font-family: var(--font-primary);
@@ -310,27 +315,30 @@ nav ul li {
     height: 110%;
     align-items: center;
     justify-content: center;
-    border-bottom:5px solid burlywood;
+    border-bottom: 5px solid burlywood;
     width: 15%;
 }
 
-.ritual-cnt{
+.ritual-cnt {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 3% 7%;
 }
-.ritual-txt{
+
+.ritual-txt {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.head{
+
+.head {
     font-family: var(--font-primary);
     color: var(--primary-color);
 }
-.ritual-box{
+
+.ritual-box {
     background-color: var(--bg-color);
     padding: 50px;
     display: flex;
@@ -341,9 +349,74 @@ nav ul li {
     flex-direction: column;
     border: 2px solid var(--primary-color);
 }
+
 .ritual-box ul li::marker {
     color: var(--primary-color);
 }
-.ritual-box h3{
+
+.ritual-box h3 {
+    color: var(--primary-color);
+}
+
+footer {
+    padding: 30px 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.email {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.sec1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.emailsec{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.arrow{
+    color: var(--primary-color);
+    position: relative;
+    right: 20px;
+}
+
+.sec2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sec2 ul li{
+    list-style: none;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+.sec2 ul li:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+
+.sec2 h3{
+    margin-bottom: 20px;
     color: var(--primary-color);
 }
