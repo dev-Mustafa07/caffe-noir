@@ -77,7 +77,7 @@ nav ul li {
     transition: 0.3s ease;
 }
 
-.order:hover{
+.order:hover {
     border-radius: 30px;
     padding: 10px 50px;
 }
@@ -152,7 +152,7 @@ nav ul li {
     cursor: pointer;
 }
 
-.coffee-img{
+.coffee-img {
     height: 50vh;
     width: 50vw;
     background-image: url("CofeeMedia/4.png");
@@ -161,12 +161,12 @@ nav ul li {
     background-size: cover;
 }
 
-.choose{
+.choose {
     font-family: var(--font-primary);
     color: var(--primary-color);
 }
 
-.coffee-cards-section{
+.coffee-cards-section {
     padding: 7vw 10vh;
     background-color: black;
     border-top: 2px solid rgba(255, 255, 255, 0.5);
@@ -177,14 +177,14 @@ nav ul li {
     gap: 50px;
 }
 
-.coffee-cards{
+.coffee-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.coffee-card{
+.coffee-card {
     height: 300px;
     width: 30%;
     background-color: var(--bg-color);
@@ -197,7 +197,78 @@ nav ul li {
     transition: 0.3s ease;
 }
 
-.coffee-card:hover{
+.coffee-card:hover {
     transform: scale(1.06);
     border: 2px solid goldenrod;
+}
+
+#coffee-flavour {
+    padding: 7vw 10vh;
+    background-color: var(--bg-color);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seasonal {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.collection {
+    font-family: var(--font-primary);
+}
+
+.coffee-flavours{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.coffee-flavour{
+    height: 70vh;
+    width: 30%;
+    transition: 0.3s ease;
+    border: 3px solid var(--bg-color);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.coffee-flavour:hover{
+    border: 3px solid var(--primary-color);
+    /* border-radius: 50px; */
+}
+
+.card01{
+    background-image: url("CofeeMedia/3.png");
+}
+.card02{
+    background-image: url("CofeeMedia/2.png");
+}
+.card03{
+    background-image: url("CofeeMedia/1.png");
+}
+
+.coffee-flavour:hover .coffee-cnt{
+    visibility: visible;
+}
+
+.coffee-cnt{
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.732) ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: end;
 }
